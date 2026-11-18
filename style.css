@@ -1,0 +1,13 @@
+.huashi_gen { cursor: pointer; opacity: 0.85; }
+.huashi_gen:hover { opacity: 1; }
+.huashi_details { margin-top: 6px; font-size: 0.85em; }
+.huashi_details summary { cursor: pointer; color: var(--SmartThemeQuoteColor, #999); }
+.huashi_prompt_box { white-space: pre-wrap; word-break: break-all; opacity: 0.8; margin-top: 4px; }
+.huashi_section { margin: 8px 0; padding: 8px 0; border-bottom: 1px dashed var(--SmartThemeBorderColor, #444); }
+.huashi_section h4 { margin: 0 0 6px; }
+.huashi_section label { display: block; margin-top: 4px; }
+.huashi_section input[type="text"], .huashi_section input[type="number"] { margin-bottom: 4px; }
+.huashi_row { margin-top: 8px; }
+.huashi_row2 { display: flex; flex-wrap: wrap; gap: 4px; align-items: center; }
+.huashi_row2 label { margin: 0 0 0 4px; }
+.huashi_row2 input { width: 70px; }

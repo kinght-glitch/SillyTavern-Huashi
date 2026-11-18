@@ -1,0 +1,59 @@
+<div class="huashi_settings">
+  <div class="inline-drawer">
+    <div class="inline-drawer-toggle inline-drawer-header">
+      <b>画师 · 剧情生图</b>
+      <div class="inline-drawer-icon fa-solid fa-circle-chevron-down down"></div>
+    </div>
+    <div class="inline-drawer-content">
+      <div class="huashi_section">
+        <h4>LLM（剧情 → 标签翻译，走酒馆 API 代理）</h4>
+        <label for="huashi_llm_url">自定义地址</label>
+        <input id="huashi_llm_url" class="text_pole" type="text" placeholder="https://api.jiuzhan.top/v1" />
+        <label for="huashi_llm_model">模型</label>
+        <input id="huashi_llm_model" class="text_pole" type="text" placeholder="deepseek-v4.1-flash" />
+        <label for="huashi_temperature">温度</label>
+        <input id="huashi_temperature" class="text_pole" type="number" step="0.1" min="0" max="2" />
+        <label for="huashi_llm_timeout">超时（秒）</label>
+        <input id="huashi_llm_timeout" class="text_pole" type="number" min="10" />
+        <div class="huashi_row">
+          <input id="huashi_test_llm" class="menu_button" type="button" value="测试连接（付费约 ¥0.02）" />
+        </div>
+        <small>密钥在酒馆「API 连接」里配置，本插件不保存密钥。</small>
+      </div>
+      <div class="huashi_section">
+        <h4>SD（本地 A1111，走酒馆 SD 代理）</h4>
+        <label for="huashi_sd_url">SD 地址</label>
+        <input id="huashi_sd_url" class="text_pole" type="text" placeholder="http://127.0.0.1:7860" />
+        <div class="huashi_row2">
+          <label for="huashi_width">宽</label><input id="huashi_width" class="text_pole" type="number" min="64" step="64" />
+          <label for="huashi_height">高</label><input id="huashi_height" class="text_pole" type="number" min="64" step="64" />
+          <label for="huashi_steps">步数</label><input id="huashi_steps" class="text_pole" type="number" min="1" />
+          <label for="huashi_cfg_scale">CFG</label><input id="huashi_cfg_scale" class="text_pole" type="number" step="0.5" min="1" />
+        </div>
+        <label for="huashi_sampler">采样器</label>
+        <input id="huashi_sampler" class="text_pole" type="text" />
+        <label for="huashi_scheduler">调度器</label>
+        <input id="huashi_scheduler" class="text_pole" type="text" />
+        <label for="huashi_clip_skip">Clip skip</label>
+        <input id="huashi_clip_skip" class="text_pole" type="number" min="1" />
+        <label for="huashi_vae">VAE（留空 = 自动）</label>
+        <input id="huashi_vae" class="text_pole" type="text" />
+        <div class="huashi_row">
+          <input id="huashi_test_sd" class="menu_button" type="button" value="测试 SD（免费）" />
+        </div>
+      </div>
+      <div class="huashi_section">
+        <h4>上下文采集</h4>
+        <label for="huashi_chat_count">聊天条数</label>
+        <input id="huashi_chat_count" class="text_pole" type="number" min="1" />
+        <label for="huashi_token_budget">Token 预算（1 token ≈ 1 中文字）</label>
+        <input id="huashi_token_budget" class="text_pole" type="number" min="500" />
+        <label class="checkbox_label" for="huashi_layer_db"><input id="huashi_layer_db" type="checkbox" /><span>数据库层（玄黄数据库）</span></label>
+        <label class="checkbox_label" for="huashi_layer_world"><input id="huashi_layer_world" type="checkbox" /><span>世界书层（无世界书时用角色卡描述兜底）</span></label>
+        <label class="checkbox_label" for="huashi_layer_chat"><input id="huashi_layer_chat" type="checkbox" /><span>聊天层</span></label>
+        <label class="checkbox_label" for="huashi_nsfw_link"><input id="huashi_nsfw_link" type="checkbox" /><span>NSFW 档位联动（总开关关闭时按「温和」）</span></label>
+        <label class="checkbox_label" for="huashi_jailbreak_inherit"><input id="huashi_jailbreak_inherit" type="checkbox" /><span>破甲继承（enhanceDefinitions 预设）</span></label>
+      </div>
+    </div>
+  </div>
+</div>
