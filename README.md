@@ -73,8 +73,9 @@ SD 存档：SD 的 outputs/txt2img-images/日期/ 目录（v1.0.2 起强制落�
 
 ## 下载
 
-- 最新 Release：https://github.com/kinght-glitch/SillyTavern-Huashi/releases/latest
-- 源码直链（v1.0.2）：https://github.com/kinght-glitch/SillyTavern-Huashi/archive/refs/tags/v1.0.2.zip
+- 插件包（推荐，解压即得「画师」文件夹）：https://github.com/kinght-glitch/SillyTavern-Huashi/releases/download/v1.0.2/huashi-v1.0.2.zip
+- 最新 Release 页：https://github.com/kinght-glitch/SillyTavern-Huashi/releases/latest
+- 源码包（v1.0.2）：https://github.com/kinght-glitch/SillyTavern-Huashi/archive/refs/tags/v1.0.2.zip
 
 ## 许可
 
