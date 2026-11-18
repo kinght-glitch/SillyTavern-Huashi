@@ -24,9 +24,38 @@
 
 LLM 只用于翻译剧情→标签，每次出图约 1 次调用（¥0.02 级）。不配置 LLM 也能出图（自动降级为原文直出）。
 
+## 从 GitHub 下载（三种方式，任选其一）
+
+### 方式一：网页直接下载（推荐，零门槛，纯鼠标操作）
+
+1. 浏览器打开插件主页：https://github.com/kinght-glitch/SillyTavern-Huashi
+2. 右侧 Releases 区块点最新的 v1.0.2，进入后点 huashi-v1.0.2.zip 下载
+3. 或直接用下载直链（无需登录）：https://github.com/kinght-glitch/SillyTavern-Huashi/releases/download/v1.0.2/huashi-v1.0.2.zip
+4. 解压 zip：Windows 右键 → 全部解压缩，得到「画师」文件夹
+
+### 方式二：git clone（适合会命令行、想持续更新的用户）
+
+1. 先安装 Git：官网 https://git-scm.com/ 下载，Windows 一路「下一步」装完
+2. 打开终端（或在文件夹空白处右键 → Git Bash Here），运行：
+
+    git clone https://github.com/kinght-glitch/SillyTavern-Huashi.git
+
+3. 得到 SillyTavern-Huashi 文件夹，改名成「画师」即可
+4. 以后更新：进该文件夹运行 git pull
+
+### 方式三：源码包下载
+
+仓库主页点绿色 Code 按钮 → Download ZIP，或直链：https://github.com/kinght-glitch/SillyTavern-Huashi/archive/refs/tags/v1.0.2.zip
+（解压后文件夹名带版本后缀，改名成「画师」即可）
+
+### GitHub 打开慢 / 打不开？
+
+- 给下载链接加加速前缀，例如：https://ghproxy.net/https://github.com/kinght-glitch/SillyTavern-Huashi/releases/download/v1.0.2/huashi-v1.0.2.zip
+- ghproxy 这类公共加速站若失效，搜「GitHub 加速」换新的即可；直链下载本身走 CDN，通常比浏览网页快
+
 ## 安装步骤
 
-1. 下载本插件 zip 并解压，得到「画师」文件夹
+1. 解压 / 改名后得到「画师」文件夹（三种下载方式见上）
 2. 关闭酒馆
 3. 把「画师」文件夹整个复制到酒馆的 data/default-user/extensions/ 目录下，最终路径形如：
 
